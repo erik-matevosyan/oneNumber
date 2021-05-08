@@ -12,7 +12,7 @@ module.exports = {
     //webpack dev server
     devServer: {
         port: 8080,
-        watchContentBase: true, // Tell dev-server to watch the files served by the devServer.contentBase option. It is disabled by default. When enabled, file changes will trigger a full page reload.
+        watchContentBase: false, // Tell dev-server to watch the files served by the devServer.contentBase option. It is disabled by default. When enabled, file changes will trigger a full page reload.
     },
     module: {
         rules: [
