@@ -2,9 +2,11 @@
   "name": "one-number",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./client/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development & NODE_ENV=development nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "nodemon": "^2.0.7",
     "style-loader": "^2.0.0",
