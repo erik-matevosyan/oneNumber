@@ -5,6 +5,7 @@
   "main": "./client/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production nodemon server/server.js",
     "build": "webpack --mode production",
     "dev": "webpack serve --mode development & NODE_ENV=development nodemon server/server.js"
   },
